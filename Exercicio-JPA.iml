@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/libs/antlr-2.7.7.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/byte-buddy-1.11.12.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/classmate-1.5.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/FastInfoset-1.2.15.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/hibernate-commons-annotations-5.1.2.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/hibernate-core-5.5.7.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/istack-commons-runtime-3.0.7.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/jandex-2.2.3.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/javassist-3.27.0-GA.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/javax.activation-api-1.2.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/javax.persistence-api-2.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/jaxb-api-2.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/jaxb-runtime-2.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/jboss-logging-3.4.2.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/jboss-transaction-api_1.2_spec-1.1.1.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/mysql-connector-java-5.1.48.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/mysql-connector-java-8.0.23.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/stax-ex-1.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/libs/txw2-2.3.1.jar!/" />
+    <src_description expected_position="1">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="1" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="JavaSE-11" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="antlr-2.7.7.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/antlr-2.7.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="byte-buddy-1.11.12.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/byte-buddy-1.11.12.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="classmate-1.5.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/classmate-1.5.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="FastInfoset-1.2.15.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/FastInfoset-1.2.15.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hibernate-commons-annotations-5.1.2.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/hibernate-commons-annotations-5.1.2.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="hibernate-core-5.5.7.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/hibernate-core-5.5.7.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="istack-commons-runtime-3.0.7.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/istack-commons-runtime-3.0.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jandex-2.2.3.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/jandex-2.2.3.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javassist-3.27.0-GA.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/javassist-3.27.0-GA.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javax.activation-api-1.2.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/javax.activation-api-1.2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javax.persistence-api-2.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/javax.persistence-api-2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jaxb-api-2.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/jaxb-api-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jaxb-runtime-2.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/jaxb-runtime-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jboss-logging-3.4.2.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/jboss-logging-3.4.2.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jboss-transaction-api_1.2_spec-1.1.1.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/jboss-transaction-api_1.2_spec-1.1.1.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mysql-connector-java-5.1.48.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/mysql-connector-java-5.1.48.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mysql-connector-java-8.0.23.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/mysql-connector-java-8.0.23.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="stax-ex-1.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/stax-ex-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="txw2-2.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/libs/txw2-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
