@@ -56,11 +56,6 @@ public class DAOImoveis < E > {
   public DAOImoveis < E > incluirAtomico(E entidade) {
     return this.abrirT().incluir(entidade).fecharT();
   }
-
-  //Obter todos os 10 primeiros elementos do banco
-  public List < E > obterTodos() {
-    return this.obterTodos(10, 0);
-  }
   
   //Obter um elemento por ID
   public Imovel obterPorId(Long id) {
@@ -103,6 +98,11 @@ public class DAOImoveis < E > {
 	  }
   }
   
+  //Obter todos os 10 primeiros elementos do banco
+  public List < E > obterTodos() {
+    return this.obterTodos(10, 0);
+  }
+  
   //Obter todos os elementos do banco
   public List < E > obterTodos(int qtde, int deslocamento) {
     if (classe == null) {
@@ -116,6 +116,16 @@ public class DAOImoveis < E > {
     query.setFirstResult(deslocamento);
     return query.getResultList();
   }
+//  
+//  public DAOImoveis<E> obterUnico(){
+//	  if (classe == null) {
+//		  throw new UnsupportedOperationException("Classe nula.");
+//	  }
+//	  
+//	  String jpql = "select e from " + classe.getName() + " e";
+//	  TypedQuery < E > query = em.createQuery(jpql, classe);
+//	  
+//  }
   
   //Fechar o entity manager
   public void fechar() {
