@@ -5,6 +5,11 @@ import java.util.List;
 import infra.DAOImoveis;
 import model.Imovel;
 
+/**
+ * Classe que obtém N imóveis no banco
+ * @author Carlos Daniel Nascimento
+ *
+ */
 public class ObterImoveis {
 
   public static void main(String[] args) {

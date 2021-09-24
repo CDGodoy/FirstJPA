@@ -5,6 +5,11 @@ import model.Imovel;
 import model.StatusImovel;
 import model.TipoImovel;
 
+/**
+ * Classe que cadastra um imóvel no banco
+ * @author Carlos Daniel Nascimento
+ *
+ */
 public class NovoImovel {
 
   public static void main(String[] args) {

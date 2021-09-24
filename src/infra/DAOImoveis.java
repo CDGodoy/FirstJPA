@@ -9,7 +9,12 @@ import javax.persistence.TypedQuery;
 
 import model.Imovel;
 
-
+/**
+ * Esta classe é um Data Access Object, aqui tratamos as conexões, SQL's e funções de CRUD do banco
+ * @author Carlos Daniel Nascimento
+ *
+ * @param <E> Entidade de classe genérica
+ */
 public class DAOImoveis < E > {
 
   private static EntityManagerFactory emf;
@@ -28,41 +33,65 @@ public class DAOImoveis < E > {
     this(null);
   }
   
-  //Construtor DAO
+ /**
+  * Construtor do DAO
+  * @param classe Classe de entidade específica
+  */
   public DAOImoveis(Class < E > classe) {
     this.classe = classe;
     em = emf.createEntityManager();
   }
 
-  //Abrir transação
+/**
+ * Abrir transação.
+ * @return this
+ */
   public DAOImoveis < E > abrirT() {
     em.getTransaction().begin();
     return this;
   }
   
-  //Fechar transação
+  /**
+   * Fechar transação
+   * @return this
+   */
   public DAOImoveis < E > fecharT() {
     em.getTransaction().commit();
     return this;
   }
   
-  //Incluir no banco
+/**
+ * Incluir um objeto no banco
+ * @param entidade Objeto a ser incluida no banco
+ */
   public DAOImoveis < E > incluir(E entidade) {
     em.persist(entidade);
     return this;
   }
   
-  //Incluir com menos linhas
+/**
+ * Realizar toda a operação de incluir um objeto no banco
+ * (Abre transação, inclui e fecha a transação).
+ * @param entidade Entidade a ser incluida no banco
+ */
   public DAOImoveis < E > incluirAtomico(E entidade) {
     return this.abrirT().incluir(entidade).fecharT();
   }
   
-  //Obter um elemento por ID
+/**
+ * Obtém um imóvel pelo seu ID
+ * @param id Chave de identificação do imóvel
+ * @return em.find()
+ */
   public Imovel obterPorId(Long id) {
 	  return em.find(Imovel.class, id);
   }
   
-  //Remover um elemento
+/**
+ * Deleta um imóvel pelo objeto escolhido.
+ * Este método procura o ID do imóvel e chama o método {@link infra.DAOImoveis#removeById(Long)}
+ * @param imovel Objeto a ser pesquisado para ser removido do banco
+ */
   public void remove(Imovel imovel) {
 	  try {
 		  this.abrirT();
@@ -75,6 +104,10 @@ public class DAOImoveis < E > {
 	  }
   }
 
+ /**
+  * Realiza o merge no banco
+  * @param imovel Objeto imóvel
+  */
   public void merge(Imovel imovel) {
 	  
 	  try {
@@ -88,7 +121,10 @@ public class DAOImoveis < E > {
 	  
   }
   
-  //Remover um elemento por ID
+/**
+ * Remove um imóvel pelo seu ID
+ * @param id Id a ser pesquisado para remover no banco
+ */
   public void removeById(final Long id) {
 	  try {
 		  Imovel imovel = obterPorId(id);
@@ -98,12 +134,19 @@ public class DAOImoveis < E > {
 	  }
   }
   
-  //Obter todos os 10 primeiros elementos do banco
+/**
+ * Acesso rápido para obter os 10 primeiros objetos do banco
+ */
   public List < E > obterTodos() {
     return this.obterTodos(10, 0);
   }
   
-  //Obter todos os elementos do banco
+/**
+ * Obter N objetos do banco
+ * @param qtde Quantidade de objetos a serem pesquisados
+ * @param deslocamento Deslocamento da pesquisa inicial (começando a partir do objeto k)
+ * @return query.getResultList()
+ */
   public List < E > obterTodos(int qtde, int deslocamento) {
     if (classe == null) {
       throw new UnsupportedOperationException("Classe nula.");
@@ -116,18 +159,10 @@ public class DAOImoveis < E > {
     query.setFirstResult(deslocamento);
     return query.getResultList();
   }
-//  
-//  public DAOImoveis<E> obterUnico(){
-//	  if (classe == null) {
-//		  throw new UnsupportedOperationException("Classe nula.");
-//	  }
-//	  
-//	  String jpql = "select e from " + classe.getName() + " e";
-//	  TypedQuery < E > query = em.createQuery(jpql, classe);
-//	  
-//  }
-  
-  //Fechar o entity manager
+
+/**
+ * Fechar entity manager
+ */
   public void fechar() {
     em.close();
   }

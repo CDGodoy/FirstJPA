@@ -3,6 +3,11 @@ package test;
 import infra.DAOImoveis;
 import model.Imovel;
 
+/**
+ * Classe que altera dados de um imóvel no banco
+ * @author Carlos Daniel Nascimento
+ *
+ */
 public class AlterarImovel {
 	public static void main(String[] args) {
 		DAOImoveis <Imovel> dao = new DAOImoveis<> (Imovel.class);
